@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/Frontend/public/index.html">
+                    <img src="images/chilli.png">
+                    <h1>SPICY</h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="/Frontend/public/index.html">Home</a></li>
+                <li><a href="/Frontend/public/product.html">Products</a></li>
+                <!-- <li><a href="/Frontend/public/cart.html" id="cart-link">Cart</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="cartItems">
+            <!-- Cart items will be dynamically added here by JavaScript -->
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-total">
+                <h2>Cart Totals</h2>
+                <div>
+                    <div class="cart-total-details">
+                        <p>Subtotal</p>
+                        <p id="subtotal-amount">$0</p> <!-- Placeholder, updated by JS -->
+                    </div>
+                    <hr />
+                    <div class="cart-total-details">
+                        <p>Delivery fee</p>
+                        <p>$2</p>
+                    </div>
+                    <hr />
+                    <div class="cart-total-details">
+                        <b>Total</b>
+                        <b id="total-amount">$2</b> <!-- Placeholder, updated by JS -->
+                    </div>
+                </div>
+                <button id="proceed-btn">PROCEED TO CHECKOUT</button>
+            </div>
+            <div class="cart-promocode">
+                <div>
+                    <p>If you have a promo code, Enter it here</p>
+                    <div class="cart-promocode-input">
+                        <input type="text" placeholder="promo code">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-left-logo">
+                    <img src="/Frontend/public/images/chilli.png" alt="Chilli Logo" />
+                    <h1>SPICY</h1>
+                </div>
+                <p>Delve into the delightful world of flavors with Spicy! Explore our menu to find a variety of dishes
+                    that bring heat and happiness to your table. Our passion is crafting unforgettable meals that are as
+                    exciting as they are satisfying. Join us on a culinary adventure that promises to spice up your
+                    life!</p>
+                <div class="social-icons">
+                    <img src="/Frontend/public/images/facebook_icon.png" alt="Facebook" />
+                    <img src="/Frontend/public/images/twitter_icon.png" alt="Twitter" />
+                    <img src="/Frontend/public/images/linkedin_icon.png" alt="LinkedIn" />
+                </div>
+            </div>
+            <div class="footer-center">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="/Frontend/public/index.html">Home</a></li>
+                    <li><a href="/Frontend/public/about.html">About us</a></li>
+                    <li><a href="/Frontend/public/delivery.html">Delivery</a></li>
+                    <li><a href="/Frontend/public/privacy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h2>GET IN TOUCH</h2>
+                <ul>
+                    <li>+123-456-7890</li>
+                    <li><a href="mailto:info@spicy.com">info@spicy.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p class="footer-copyright">© 2024 Spicy. All rights reserved.</p>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
